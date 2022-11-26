@@ -15,10 +15,13 @@
     <script src="https://kit.fontawesome.com/15344fba6a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/font-awesome.css">
 
-    <!--normalize.css ujednolicenie stylów przeglądarki-->
+    <!--normalize.css ujednolicenie stylów przeglądarki
     <link rel="stylesheet" href="./styles/normalize.css">
-    <!--style css-->
-    <link rel="stylesheet" href="./styles/main.css">
+      style css
+    <link rel="stylesheet" href="./styles/main.css">-->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/normalize.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}"/>
 
     <title>Moja strona</title>
 </head>
@@ -59,7 +62,7 @@
 
             <div class="columns-container columns-2-container">
                 <div class="columns about-image">
-                    <img src="./images/kot.jpg" alt="kot">
+                    <img src="{{url_for('static', filename='./images/kot.jpg')}}" alt="kot">
                 </div>
                 <div class="columns">
                     <h2>O mnie</h2>
@@ -108,37 +111,37 @@
             <div class="columns-container columns-3-container">
                 <div class="columns photos-section">
                     <figure>
-                        <img src="./images/kot1.jpg" alt="kot1">
+                        <img src="{{url_for('static', filename='./images/kot1.jpg')}}" alt="kot1">
                         <figcaption>Zdjęcie autorstwa <strong>XXX</strong> ze strony <strong>YYY</strong></figcaption>
                     </figure>
                 </div>
                 <div class="columns photos-section">
                     <figure>
-                        <img src="./images/kot5.jpg" alt="kot5">
+                        <img src="{{url_for('static', filename='./images/kot5.jpg')}}" alt="kot5">
                         <figcaption>Zdjęcie autorstwa <strong>XXX</strong> ze strony <strong>YYY</strong></figcaption>
                     </figure>
                 </div>
                 <div class="columns photos-section">
                     <figure>
-                        <img src="./images/kot3.jpg" alt="kot3">
+                        <img src="{{url_for('static', filename='./images/kot3.jpg')}}" alt="kot3">
                         <figcaption>Zdjęcie autorstwa <strong>XXX</strong> ze strony <strong>YYY</strong></figcaption>
                     </figure>
                 </div>
                 <div class="columns photos-section">
                     <figure>
-                        <img src="./images/kot4.jpg" alt="kot4">
+                        <img src="{{url_for('static', filename='./images/kot4.jpg')}}" alt="kot4">
                         <figcaption>Zdjęcie autorstwa <strng>XXX</strong> ze strony <strong>YYY</strong></figcaption>
                     </figure>
                 </div>
                 <div class="columns photos-section">
                     <figure>
-                        <img src="./images/kot6.jpg" alt="kot6">
+                        <img src="{{url_for('static', filename='./images/kot6.jpg')}}" alt="kot6">
                         <figcaption>Zdjęcie autorstwa <strng>XXX</strng> ze strony <strong>YYY</strong></figcaption>
                     </figure>
                 </div>
                 <div class="columns photos-section">
                     <figure>
-                        <img src="./images/kot2.jpg" alt="kot2">
+                        <img src="{{url_for('static', filename='./images/kot2.jpg')}}" alt="kot2">
                         <figcaption>Zdjęcie autorstwa <strng>XXX</strng> ze strony <strong>YYY</strong></figcaption>
                     </figure>
                 </div>
@@ -201,7 +204,7 @@
     </footer>
    
     <!-- Jabva Script -->
-    <script src="./script.js"></script>
+    <script src="{{url_for('static', filename='scripts/script.js')}}"></script>
 
 </body>
 </html>
