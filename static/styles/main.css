@@ -446,6 +446,36 @@ section {
     background-color: var(--różowy);
 }
 
+/* project section */
+
+.projects-section input {
+    border: 3px solid var(--niebieski);
+    border-radius: 5px;
+}
+
+.projects-section button {
+    color: var(--fioletowy);
+    background-color: var(--niebieski);
+    border: 3px solid var(--różowy);
+    text-decoration: none;
+}
+
+.projects-section button:hover {
+    color: var(--fioletowy);
+    background-color: var(--różowy);
+}
+
+.projects-section li i,
+.projects-section li a {
+    color: var(--różowy);
+}
+
+.projects-section li i:hover,
+.projects-section li a:hover {
+    color: var(--fioletowy);
+}
+
+
 /* footer */
 
 /* .columns-2-container {
